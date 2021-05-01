@@ -1,0 +1,23 @@
+.footer__row-link {
+    font-size: 1em;
+    line-height: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s;
+    color: #FFFFFF;
+    transition: opacity .5s linear;
+  }
+  
+  .footer__row-link:hover {
+    opacity: .6;
+  }
+
+  @media screen and (max-width: 320px) {
+    .footer__row-link {
+        font-size: 24px;
+        line-height: 24px;
+        grid-template-columns: minmax(288px, 1fr);
+        grid-gap: 32px;
+    }
+}

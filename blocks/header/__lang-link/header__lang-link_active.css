@@ -1,0 +1,12 @@
+.header__lang-link_active {
+  font-family: 'Inter';
+  color: #ffff;
+}
+
+@media screen and (max-width: 658px) {
+  .header__lang-link_active  {
+    width: 30px;
+    height: 28px;
+    }
+  }
+    
