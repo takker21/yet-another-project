@@ -1,6 +1,6 @@
 .cover__link {
     background-image: url(https://i.ibb.co/CKvCY3V/background.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     text-decoration: none;
@@ -9,14 +9,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 740px;
-    transition: opacity .5s linear;
-    
-  }
-  
-  .cover__link:before{
+    max-width: 100%;
+    max-height: 740px;
+}
+
+.cover__link::before{
     content: "";
-    opacity: 0.6;
     top: 0;
     left: 0;
     bottom: 0;
@@ -24,21 +22,30 @@
     background: #2A2C2F;
     opacity: 0.3;
     position: absolute;
-    transition: opacity 1s;
-  }
-  
-  .cover__link:hover::before {
-    transition: opacity .5s linear;
-    opacity: .6;
-  }
+    transition: opacity .6 linear;
+}
 
+.cover__link:hover::before {
+    opacity: 0.6;
+}
 
-  @media screen and (min-width: 321px) and (max-width: 768px){
-    .cover__link {     
-      min-height: 200px;
-      margin: 0 auto;
-      background-size: cover;
+@media screen and (max-width: 1023px){
+    .cover__link{
+        width: 100%;
+        max-width: 768px;
+        max-height: 480px;
+        background-size: contain;
+        background-position: top;
+    }
+}
 
+@media screen and (max-width: 767px){
+    .cover__link{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+        background-position: top;
     }
 }
 

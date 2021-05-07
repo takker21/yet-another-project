@@ -5,5 +5,6 @@
 
 # Что бы я хотел добавить.
 Больше анимации, многостраничный вариант сайта,у доббное пермещение по уровням работы.
-# Ссылка на проектную работу
-https://github.com/takker21/russian-travel
+
+# Ссылка на проект с Git Pages
+https://github.com/takker21/yet-another-project

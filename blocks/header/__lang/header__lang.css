@@ -1,0 +1,24 @@
+.header__lang {
+  margin-right: 18px;
+  margin-top: 46px;
+  font-style: normal;
+  text-align: right;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #ffff;
+  text-decoration: none;
+  transition: opacity 0.6 linear;
+}
+.header__lang:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .header__lang  {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 30px;
+    }
+  }
