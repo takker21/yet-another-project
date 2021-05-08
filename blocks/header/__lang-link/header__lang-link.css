@@ -1,11 +1,9 @@
 .header__lang-link {
-  font-size: 24px;
-  line-height: 28px;
-  margin-left: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  list-style: none;
-  color: #ffff;
-  
+  align-self: flex-end;
 }
 
 

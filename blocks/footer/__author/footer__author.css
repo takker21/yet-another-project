@@ -1,25 +1,18 @@
 .footer__author {
     margin: 0;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #fff;
-    justify-self: end;
-    text-align: right;
-}
-
-@media screen and (max-width: 767px) {
-    .footer__author{
-        line-height: 14px;
-    }
-    
-}
-
-@media screen and (max-width: 320px) {
+  }
+  
+  .footer__author:before {
+    content: '';
+    padding-right: 5px;
+  }
+  
+  @media screen and (max-width: 320px) {
     .footer__author {
-        padding: 48px 16px 24px 16px;
-        margin: 0;
+      line-height: 14px;
+      padding-top: 16px;
     }
-}
+  }
